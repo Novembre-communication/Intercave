@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Intercave – Bilan de Campagne Meta Ads</title>
+<title>Intercaves – Bilan de Campagne Meta Ads</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -58,21 +58,16 @@
 </style>
 </head>
 <body>
-
 <!-- HEADER -->
 <div class="header">
   <div class="label">Bilan de campagne · Meta Ads</div>
   <h1>BILAN CAMPAGNE · CARROUSEL · FAV PRINTEMPS 2026</h1>
-  <h2>Intercave · Meta Ads</h2>
+  <h2>Intercaves · Meta Ads</h2>
   <div style="margin-top:8px;font-size:13px;opacity:0.75;letter-spacing:0.5px;">🎯 Objectif Meta : maximiser le nombre d'impressions</div>
   <div class="period">📅 Période du <strong>18/03/2026 → 04/04/2026</strong> &nbsp;·&nbsp; <strong>62 ad sets · FAV PRINTEMPS 2026</strong></div>
 </div>
-
-
-
 <!-- CRÉATIVE UNIQUE -->
 <div style="background:white;border-radius:16px;padding:28px 32px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:28px;">
-
   <!-- Titre -->
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
     <div>
@@ -81,9 +76,7 @@
     </div>
     <div style="background:#f3f4f6;border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;color:#6b7280;" id="carousel-label-top">Visuel 1 / 9</div>
   </div>
-
   <div style="display:grid;grid-template-columns:340px 1fr;gap:32px;align-items:start;">
-
     <!-- CARROUSEL -->
     <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.10);">
       <!-- Zone image -->
@@ -98,10 +91,8 @@
         <div style="font-size:11px;color:#9ca3af;">62 zones · France</div>
       </div>
     </div>
-
     <!-- MÉTRIQUES -->
     <div style="display:flex;flex-direction:column;gap:16px;">
-
       <!-- Ligne 1 : 3 KPIs principaux -->
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
         <div style="padding:18px 16px;border-radius:12px;border:1px solid #e5e7eb;">
@@ -119,7 +110,6 @@
           <div style="font-size:24px;font-weight:900;color:#d97706;letter-spacing:-0.5px;">2,27</div>
         </div>
       </div>
-
       <!-- Ligne 2 : 3 KPIs secondaires -->
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
         <div style="padding:18px 16px;border-radius:12px;border:1px solid #e5e7eb;">
@@ -135,17 +125,14 @@
           <div style="font-size:24px;font-weight:900;color:#9d174d;letter-spacing:-0.5px;">10 482</div>
         </div>
       </div>
-
       <!-- Bandeau budget -->
       <div style="background:#f8faff;border-radius:12px;padding:14px 18px;border:1px solid #e0e7ff;display:flex;align-items:center;gap:10px;">
         <span style="font-size:16px;">🗺️</span>
         <span style="font-size:12.5px;color:#374151;">Campagne diffusée sur <strong style="color:#1a1a2e;">62 zones</strong> en France · Budget de <strong style="color:#1a1a2e;">150 € par zone</strong> · Total dépensé : <strong style="color:#1a1a2e;">9 299 €</strong></span>
       </div>
-
     </div>
   </div>
 </div>
-
 <script>
 var carouselImages = [
   'https://i.imgur.com/5oAcPFs.jpg',
@@ -159,7 +146,6 @@ var carouselImages = [
   'https://i.imgur.com/Big568U.jpg'
 ];
 var carouselIndex = 0;
-
 function buildCarousel() {
   var track = document.getElementById('carousel-track');
   var dots  = document.getElementById('carousel-dots');
@@ -181,7 +167,6 @@ function buildCarousel() {
   });
   updateCarousel();
 }
-
 function updateCarousel() {
   document.getElementById('carousel-track').style.transform = 'translateX(-' + (carouselIndex * 100) + '%)';
   var label = 'Visuel ' + (carouselIndex + 1) + ' / ' + carouselImages.length;
@@ -191,7 +176,6 @@ function updateCarousel() {
     dot.style.background = i === carouselIndex ? '#1a1a2e' : '#d1d5db';
   });
 }
-
 function carouselPrev() {
   carouselIndex = (carouselIndex - 1 + carouselImages.length) % carouselImages.length;
   updateCarousel();
@@ -200,10 +184,8 @@ function carouselNext() {
   carouselIndex = (carouselIndex + 1) % carouselImages.length;
   updateCarousel();
 }
-
 window.addEventListener('load', buildCarousel);
 </script>
-
 <!-- TABLEAU PAR ZONE -->
 <div class="section">
   <div class="section-title">
@@ -228,7 +210,7 @@ window.addEventListener('load', buildCarousel);
       <tbody>
         <tr><td><span class="rank rank-1">1</span></td><td><strong>SAINT MAUR DES FOSSES</strong></td><td><div class="bar-wrap"><strong>191088</strong><div class="bar-bg"><div class="bar-fill" style="width:100%;"></div></div></div></td><td>0,78 €</td><td>1,64</td><td style="border-left:2px solid #e5e7eb;"><strong>116249</strong></td><td>1,29 €</td><td>149</td></tr>
         <tr><td><span class="rank rank-2">2</span></td><td><strong>BOIS GUILLAUME</strong></td><td><div class="bar-wrap"><strong>189684</strong><div class="bar-bg"><div class="bar-fill" style="width:99%;"></div></div></div></td><td>0,79 €</td><td>1,67</td><td style="border-left:2px solid #e5e7eb;"><strong>113918</strong></td><td>1,32 €</td><td>171</td></tr>
-        <tr><td><span class="rank rank-3">3</span></td><td><strong>SAINT-CYR-L’ECOLE</strong></td><td><div class="bar-wrap"><strong>176634</strong><div class="bar-bg"><div class="bar-fill" style="width:92%;"></div></div></div></td><td>0,85 €</td><td>1,66</td><td style="border-left:2px solid #e5e7eb;"><strong>106265</strong></td><td>1,41 €</td><td>131</td></tr>
+        <tr><td><span class="rank rank-3">3</span></td><td><strong>SAINT-CYR-L'ECOLE</strong></td><td><div class="bar-wrap"><strong>176634</strong><div class="bar-bg"><div class="bar-fill" style="width:92%;"></div></div></div></td><td>0,85 €</td><td>1,66</td><td style="border-left:2px solid #e5e7eb;"><strong>106265</strong></td><td>1,41 €</td><td>131</td></tr>
         <tr><td><span class="rank rank-n">4</span></td><td><strong>BESANÇON</strong></td><td><div class="bar-wrap"><strong>176011</strong><div class="bar-bg"><div class="bar-fill" style="width:92%;"></div></div></div></td><td>0,85 €</td><td>1,91</td><td style="border-left:2px solid #e5e7eb;"><strong>92218</strong></td><td>1,63 €</td><td>170</td></tr>
         <tr><td><span class="rank rank-n">5</span></td><td><strong>SALLANCHES</strong></td><td><div class="bar-wrap"><strong>175753</strong><div class="bar-bg"><div class="bar-fill" style="width:92%;"></div></div></div></td><td>0,85 €</td><td>1,70</td><td style="border-left:2px solid #e5e7eb;"><strong>103093</strong></td><td>1,45 €</td><td>188</td></tr>
         <tr><td><span class="rank rank-n">6</span></td><td><strong>OLLIOULES</strong></td><td><div class="bar-wrap"><strong>175419</strong><div class="bar-bg"><div class="bar-fill" style="width:92%;"></div></div></div></td><td>0,85 €</td><td>2,00</td><td style="border-left:2px solid #e5e7eb;"><strong>87742</strong></td><td>1,71 €</td><td>212</td></tr>
@@ -302,7 +284,6 @@ window.addEventListener('load', buildCarousel);
     </table>
   </div>
 </div>
-
 <!-- DÉMOGRAPHIQUES -->
 <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;margin-top:8px;">
   <div style="background:#7c3aed;border-radius:8px;padding:6px 16px;display:flex;align-items:center;gap:8px;box-shadow:0 2px 8px rgba(124,58,237,0.3);">
@@ -311,7 +292,6 @@ window.addEventListener('load', buildCarousel);
   </div>
   <div style="flex:1;height:1px;background:linear-gradient(to right,#7c3aed40,transparent);"></div>
 </div>
-
 <div class="section">
   <div class="section-title">
     <span style="font-size:18px;">📊</span>
@@ -319,7 +299,6 @@ window.addEventListener('load', buildCarousel);
     <span class="pill">Couverture globale · toutes zones</span>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-
     <!-- PAR ÂGE -->
     <div style="background:white;border-radius:12px;padding:20px 24px;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
       <div style="font-size:13px;font-weight:800;color:#374151;margin-bottom:14px;">🎂 Par tranche d'âge</div>
@@ -366,7 +345,6 @@ window.addEventListener('load', buildCarousel);
       </table>
       <div style="margin-top:12px;background:#eaf2ff;border-radius:8px;padding:8px 12px;font-size:11px;font-weight:600;color:#1a5276;">💡 Tranche la plus touchée : <strong>25–34 ans</strong> (27,3 %)</div>
     </div>
-
     <!-- PAR GENRE -->
     <div style="background:white;border-radius:12px;padding:20px 24px;box-shadow:0 1px 4px rgba(0,0,0,0.07);">
       <div style="font-size:13px;font-weight:800;color:#374151;margin-bottom:14px;">⚥ Par genre</div>
@@ -386,10 +364,8 @@ window.addEventListener('load', buildCarousel);
         ⚠️ <strong>Sur-représentation masculine notable (60,2 %)</strong> alors que les femmes sont souvent décisionnaires dans l'achat alimentaire. Un ajustement du ciblage en vague 2 permettrait de rééquilibrer et d'élargir la couverture féminine.
       </div>
     </div>
-
   </div>
 </div>
-
 <!-- DÉMOGRAPHIE PAR VILLE -->
 <div class="section">
   <div class="section-title">
@@ -398,7 +374,6 @@ window.addEventListener('load', buildCarousel);
     <span class="pill">Cliquer sur une ville pour le détail</span>
   </div>
   <div style="background:white;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,0.07);overflow:hidden;">
-
     <!-- En-tête colonnes -->
     <div style="display:grid;grid-template-columns:1fr 110px 110px 100px 140px 60px;gap:0;background:#1a1a2e;color:white;padding:10px 18px;font-size:11px;font-weight:600;letter-spacing:0.5px;">
       <div>Ville</div>
@@ -408,19 +383,14 @@ window.addEventListener('load', buildCarousel);
       <div style="text-align:center;">Tranche principale</div>
       <div></div>
     </div>
-
     <div id="city-demo-list"></div>
   </div>
 </div>
-
 <script>
 var cityData = {"BESANÇON":{"total":91152,"male":59286,"female":31866,"ages":{"18-24":{"female":7827,"male":11732},"25-34":{"female":7576,"male":17586},"35-44":{"female":5137,"male":12365},"45-54":{"female":4376,"male":8710},"55-64":{"female":3744,"male":5565},"65+":{"female":3206,"male":3328}},"top_age":"25-34"},"AMBERIEUX D'AZERGUES":{"total":69083,"male":41461,"female":27622,"ages":{"18-24":{"female":6057,"male":7644},"25-34":{"female":7758,"male":13167},"35-44":{"female":5240,"male":9138},"45-54":{"female":3611,"male":5991},"55-64":{"female":2695,"male":3448},"65+":{"female":2261,"male":2073}},"top_age":"25-34"},"BERGERAC":{"total":67995,"male":37847,"female":30148,"ages":{"18-24":{"female":6096,"male":6882},"25-34":{"female":8192,"male":12152},"35-44":{"female":5313,"male":7639},"45-54":{"female":3878,"male":5123},"55-64":{"female":3421,"male":3492},"65+":{"female":3248,"male":2559}},"top_age":"25-34"},"BITSCHWILLER LES THANN":{"total":59013,"male":32497,"female":26516,"ages":{"18-24":{"female":4926,"male":5020},"25-34":{"female":7123,"male":10040},"35-44":{"female":5196,"male":7037},"45-54":{"female":3612,"male":4789},"55-64":{"female":2991,"male":3292},"65+":{"female":2668,"male":2319}},"top_age":"25-34"},"BOIS GUILLAUME":{"total":111262,"male":76137,"female":35125,"ages":{"18-24":{"female":8866,"male":15293},"25-34":{"female":6603,"male":20339},"35-44":{"female":4973,"male":15419},"45-54":{"female":4678,"male":11615},"55-64":{"female":5222,"male":8167},"65+":{"female":4783,"male":5304}},"top_age":"25-34"},"BOISSY SAINT LEGER":{"total":78980,"male":46717,"female":32263,"ages":{"18-24":{"female":7600,"male":8954},"25-34":{"female":10083,"male":15282},"35-44":{"female":5746,"male":10138},"45-54":{"female":3769,"male":6388},"55-64":{"female":2741,"male":3625},"65+":{"female":2324,"male":2330}},"top_age":"25-34"},"BOURG-ACHARD":{"total":56574,"male":31528,"female":25046,"ages":{"18-24":{"female":4408,"male":4619},"25-34":{"female":7033,"male":9941},"35-44":{"female":5003,"male":7238},"45-54":{"female":3539,"male":4740},"55-64":{"female":2669,"male":3061},"65+":{"female":2394,"male":1929}},"top_age":"25-34"},"BOURGOIN-JALLIEU":{"total":82305,"male":50128,"female":32177,"ages":{"18-24":{"female":7350,"male":9658},"25-34":{"female":8805,"male":16403},"35-44":{"female":5789,"male":10548},"45-54":{"female":4124,"male":6892},"55-64":{"female":3359,"male":4194},"65+":{"female":2750,"male":2433}},"top_age":"25-34"},"BRIGNOLES":{"total":69249,"male":39901,"female":29348,"ages":{"18-24":{"female":5374,"male":6238},"25-34":{"female":7711,"male":12234},"35-44":{"female":5365,"male":8542},"45-54":{"female":4164,"male":5808},"55-64":{"female":3459,"male":4080},"65+":{"female":3275,"male":2999}},"top_age":"25-34"},"CARNOUX":{"total":86185,"male":53633,"female":32552,"ages":{"18-24":{"female":6124,"male":8388},"25-34":{"female":7412,"male":15437},"35-44":{"female":5709,"male":11660},"45-54":{"female":4848,"male":8167},"55-64":{"female":4269,"male":5833},"65+":{"female":4190,"male":4148}},"top_age":"25-34"},"CARVIN":{"total":81539,"male":49638,"female":31901,"ages":{"18-24":{"female":5338,"male":7449},"25-34":{"female":6909,"male":14159},"35-44":{"female":6401,"male":11440},"45-54":{"female":4737,"male":7963},"55-64":{"female":4426,"male":5259},"65+":{"female":4090,"male":3368}},"top_age":"25-34"},"CASTRES":{"total":75109,"male":44567,"female":30542,"ages":{"18-24":{"female":6335,"male":8360},"25-34":{"female":7585,"male":13078},"35-44":{"female":5283,"male":9387},"45-54":{"female":4442,"male":6264},"55-64":{"female":3765,"male":4513},"65+":{"female":3132,"male":2965}},"top_age":"25-34"},"CHARMEIL":{"total":76531,"male":45175,"female":31356,"ages":{"18-24":{"female":6767,"male":8413},"25-34":{"female":7636,"male":13765},"35-44":{"female":5386,"male":9302},"45-54":{"female":4195,"male":6387},"55-64":{"female":3726,"male":4293},"65+":{"female":3646,"male":3015}},"top_age":"25-34"},"CLAIROIX":{"total":86227,"male":52336,"female":33891,"ages":{"18-24":{"female":7562,"male":9409},"25-34":{"female":8204,"male":15316},"35-44":{"female":5947,"male":11368},"45-54":{"female":4745,"male":7781},"55-64":{"female":4005,"male":5210},"65+":{"female":3428,"male":3252}},"top_age":"25-34"},"COMBS LA VILLE":{"total":87520,"male":55667,"female":31853,"ages":{"18-24":{"female":7141,"male":9494},"25-34":{"female":8506,"male":17602},"35-44":{"female":5945,"male":12736},"45-54":{"female":4088,"male":7909},"55-64":{"female":3283,"male":4801},"65+":{"female":2890,"male":3125}},"top_age":"25-34"},"CHARTRES":{"total":80408,"male":47582,"female":32826,"ages":{"18-24":{"female":6849,"male":8432},"25-34":{"female":8676,"male":14763},"35-44":{"female":6059,"male":10238},"45-54":{"female":4412,"male":6902},"55-64":{"female":3620,"male":4471},"65+":{"female":3210,"male":2776}},"top_age":"25-34"},"COSNES":{"total":58386,"male":32286,"female":26100,"ages":{"18-24":{"female":4845,"male":5359},"25-34":{"female":7106,"male":9981},"35-44":{"female":4549,"male":6799},"45-54":{"female":3524,"male":4687},"55-64":{"female":3023,"male":3145},"65+":{"female":3053,"male":2315}},"top_age":"25-34"},"COUILLY PONT AUX DAMES":{"total":72850,"male":42148,"female":30702,"ages":{"18-24":{"female":6664,"male":7144},"25-34":{"female":9262,"male":13275},"35-44":{"female":5874,"male":9662},"45-54":{"female":3971,"male":6402},"55-64":{"female":2756,"male":3568},"65+":{"female":2175,"male":2097}},"top_age":"25-34"},"COULAINES":{"total":95104,"male":61780,"female":33324,"ages":{"18-24":{"female":7390,"male":11951},"25-34":{"female":6974,"male":17875},"35-44":{"female":5354,"male":12563},"45-54":{"female":4673,"male":9022},"55-64":{"female":4690,"male":6266},"65+":{"female":4243,"male":4103}},"top_age":"25-34"},"COULOMMIERS":{"total":68738,"male":39358,"female":29380,"ages":{"18-24":{"female":6039,"male":6460},"25-34":{"female":8254,"male":12918},"35-44":{"female":5867,"male":8974},"45-54":{"female":3837,"male":5381},"55-64":{"female":2989,"male":3388},"65+":{"female":2394,"male":2237}},"top_age":"25-34"},"CRAPONNE":{"total":91703,"male":58794,"female":32909,"ages":{"18-24":{"female":8088,"male":11972},"25-34":{"female":8314,"male":17789},"35-44":{"female":5324,"male":11718},"45-54":{"female":4331,"male":8179},"55-64":{"female":3670,"male":5786},"65+":{"female":3182,"male":3350}},"top_age":"25-34"},"CROIX":{"total":74784,"male":42912,"female":31872,"ages":{"18-24":{"female":7766,"male":8226},"25-34":{"female":8889,"male":13496},"35-44":{"female":5515,"male":9387},"45-54":{"female":4271,"male":6025},"55-64":{"female":2987,"male":3661},"65+":{"female":2444,"male":2117}},"top_age":"25-34"},"DECHY":{"total":89558,"male":55924,"female":33634,"ages":{"18-24":{"female":6658,"male":9332},"25-34":{"female":7341,"male":15597},"35-44":{"female":6116,"male":12966},"45-54":{"female":5273,"male":8751},"55-64":{"female":4306,"male":5650},"65+":{"female":3940,"male":3628}},"top_age":"25-34"},"FONTAINEBLEAU":{"total":78412,"male":45598,"female":32814,"ages":{"18-24":{"female":8226,"male":9089},"25-34":{"female":9487,"male":15059},"35-44":{"female":5674,"male":9428},"45-54":{"female":4128,"male":6064},"55-64":{"female":2992,"male":3646},"65+":{"female":2307,"male":2312}},"top_age":"25-34"},"GARGENVILLE":{"total":61219,"male":34616,"female":26603,"ages":{"18-24":{"female":5665,"male":5935},"25-34":{"female":7952,"male":11329},"35-44":{"female":4955,"male":7696},"45-54":{"female":3470,"male":4888},"55-64":{"female":2455,"male":2916},"65+":{"female":2106,"male":1852}},"top_age":"25-34"},"GOURNAY SUR MARNE":{"total":93547,"male":60126,"female":33421,"ages":{"18-24":{"female":8776,"male":12304},"25-34":{"female":8958,"male":18818},"35-44":{"female":5414,"male":13078},"45-54":{"female":3933,"male":7859},"55-64":{"female":3280,"male":4834},"65+":{"female":3060,"male":3233}},"top_age":"25-34"},"ISSOIRE":{"total":57884,"male":32104,"female":25780,"ages":{"18-24":{"female":4927,"male":5693},"25-34":{"female":7020,"male":9707},"35-44":{"female":4810,"male":7129},"45-54":{"female":3488,"male":4609},"55-64":{"female":2982,"male":3043},"65+":{"female":2553,"male":1923}},"top_age":"25-34"},"ITTEVILLE":{"total":70537,"male":40581,"female":29956,"ages":{"18-24":{"female":6340,"male":7341},"25-34":{"female":8355,"male":12688},"35-44":{"female":5838,"male":8641},"45-54":{"female":3829,"male":5940},"55-64":{"female":3051,"male":3700},"65+":{"female":2543,"male":2271}},"top_age":"25-34"},"JOUÉ-LÉS-TOURS":{"total":81242,"male":48472,"female":32770,"ages":{"18-24":{"female":8257,"male":9847},"25-34":{"female":9146,"male":15848},"35-44":{"female":5281,"male":9511},"45-54":{"female":3969,"male":6645},"55-64":{"female":3242,"male":3998},"65+":{"female":2875,"male":2623}},"top_age":"25-34"},"LANGON":{"total":68433,"male":39001,"female":29432,"ages":{"18-24":{"female":5586,"male":6271},"25-34":{"female":7779,"male":11872},"35-44":{"female":5480,"male":8478},"45-54":{"female":4383,"male":5922},"55-64":{"female":3455,"male":3915},"65+":{"female":2749,"male":2543}},"top_age":"25-34"},"LE MANS":{"total":93509,"male":60374,"female":33135,"ages":{"18-24":{"female":8126,"male":13004},"25-34":{"female":7547,"male":17320},"35-44":{"female":5216,"male":12179},"45-54":{"female":4238,"male":8203},"55-64":{"female":4101,"male":5825},"65+":{"female":3907,"male":3843}},"top_age":"25-34"},"LE VERSOUD":{"total":75436,"male":44689,"female":30747,"ages":{"18-24":{"female":7519,"male":9379},"25-34":{"female":8720,"male":14268},"35-44":{"female":5368,"male":9032},"45-54":{"female":3796,"male":5868},"55-64":{"female":2889,"male":3700},"65+":{"female":2455,"male":2442}},"top_age":"25-34"},"LIMOGES":{"total":85480,"male":53669,"female":31811,"ages":{"18-24":{"female":6379,"male":9479},"25-34":{"female":6360,"male":14374},"35-44":{"female":5445,"male":11368},"45-54":{"female":4739,"male":8580},"55-64":{"female":4541,"male":6004},"65+":{"female":4347,"male":3864}},"top_age":"25-34"},"LIMOGES CENTRE":{"total":84239,"male":53528,"female":30711,"ages":{"18-24":{"female":7841,"male":11689},"25-34":{"female":6545,"male":14970},"35-44":{"female":4627,"male":10621},"45-54":{"female":4093,"male":7381},"55-64":{"female":3935,"male":5230},"65+":{"female":3670,"male":3637}},"top_age":"25-34"},"MARIGNANE":{"total":83801,"male":52058,"female":31743,"ages":{"18-24":{"female":6781,"male":8735},"25-34":{"female":8474,"male":16552},"35-44":{"female":5425,"male":11364},"45-54":{"female":4221,"male":7642},"55-64":{"female":3656,"male":4756},"65+":{"female":3186,"male":3009}},"top_age":"25-34"},"MARLY - (VALENCIENNES)":{"total":93896,"male":59173,"female":34723,"ages":{"18-24":{"female":7016,"male":10692},"25-34":{"female":7824,"male":16473},"35-44":{"female":6152,"male":13114},"45-54":{"female":5036,"male":9600},"55-64":{"female":4628,"male":5655},"65+":{"female":4067,"male":3639}},"top_age":"25-34"},"MEUNG-SUR-LOIRE":{"total":74719,"male":44585,"female":30134,"ages":{"18-24":{"female":6388,"male":7413},"25-34":{"female":7523,"male":13843},"35-44":{"female":5642,"male":9732},"45-54":{"female":4198,"male":6460},"55-64":{"female":3374,"male":4327},"65+":{"female":3009,"male":2810}},"top_age":"25-34"},"MILLAU":{"total":53837,"male":29092,"female":24745,"ages":{"18-24":{"female":5025,"male":5238},"25-34":{"female":6929,"male":9151},"35-44":{"female":4322,"male":6024},"45-54":{"female":3452,"male":3903},"55-64":{"female":2710,"male":2820},"65+":{"female":2307,"male":1956}},"top_age":"25-34"},"MIRIBEL LES ECHETS":{"total":89540,"male":56523,"female":33017,"ages":{"18-24":{"female":7678,"male":10493},"25-34":{"female":8642,"male":17379},"35-44":{"female":5674,"male":12181},"45-54":{"female":4252,"male":8187},"55-64":{"female":3713,"male":5246},"65+":{"female":3058,"male":3037}},"top_age":"25-34"},"MONTBELIARD":{"total":86987,"male":55554,"female":31433,"ages":{"18-24":{"female":5665,"male":8833},"25-34":{"female":6720,"male":15463},"35-44":{"female":5960,"male":11992},"45-54":{"female":4865,"male":9040},"55-64":{"female":4246,"male":6331},"65+":{"female":3977,"male":3895}},"top_age":"25-34"},"MONTLOUIS":{"total":62484,"male":34522,"female":27962,"ages":{"18-24":{"female":5127,"male":5563},"25-34":{"female":7509,"male":10228},"35-44":{"female":5356,"male":7543},"45-54":{"female":3790,"male":5393},"55-64":{"female":3158,"male":3444},"65+":{"female":3022,"male":2351}},"top_age":"25-34"},"NIORT":{"total":83266,"male":50576,"female":32690,"ages":{"18-24":{"female":6578,"male":8893},"25-34":{"female":8153,"male":15187},"35-44":{"female":5948,"male":10544},"45-54":{"female":4924,"male":7779},"55-64":{"female":3808,"male":5177},"65+":{"female":3279,"male":2996}},"top_age":"25-34"},"OLLIOULES":{"total":87447,"male":55286,"female":32161,"ages":{"18-24":{"female":5227,"male":8109},"25-34":{"female":6460,"male":14791},"35-44":{"female":5496,"male":12236},"45-54":{"female":4705,"male":8346},"55-64":{"female":4798,"male":6678},"65+":{"female":5475,"male":5126}},"top_age":"25-34"},"ORSAY":{"total":66170,"male":37791,"female":28379,"ages":{"18-24":{"female":8505,"male":8560},"25-34":{"female":8797,"male":12577},"35-44":{"female":4543,"male":7675},"45-54":{"female":3087,"male":4779},"55-64":{"female":1975,"male":2701},"65+":{"female":1472,"male":1499}},"top_age":"25-34"},"OZOIR LA FERRIERE":{"total":80819,"male":49159,"female":31660,"ages":{"18-24":{"female":6466,"male":8118},"25-34":{"female":8739,"male":15290},"35-44":{"female":6016,"male":10913},"45-54":{"female":4379,"male":7505},"55-64":{"female":3274,"male":4418},"65+":{"female":2786,"male":2915}},"top_age":"25-34"},"PORNIC":{"total":66086,"male":37336,"female":28750,"ages":{"18-24":{"female":5718,"male":6530},"25-34":{"female":7319,"male":11466},"35-44":{"female":5083,"male":7796},"45-54":{"female":3863,"male":5314},"55-64":{"female":3481,"male":3526},"65+":{"female":3286,"male":2704}},"top_age":"25-34"},"PRINGY":{"total":87551,"male":54514,"female":33037,"ages":{"18-24":{"female":7852,"male":10017},"25-34":{"female":8462,"male":16395},"35-44":{"female":6015,"male":12333},"45-54":{"female":4167,"male":7680},"55-64":{"female":3476,"male":4857},"65+":{"female":3065,"male":3232}},"top_age":"25-34"},"SAINT GERMAIN LES CORBEIL":{"total":92165,"male":57613,"female":34552,"ages":{"18-24":{"female":8504,"male":10777},"25-34":{"female":10030,"male":18839},"35-44":{"female":6107,"male":12503},"45-54":{"female":3997,"male":7726},"55-64":{"female":3251,"male":4707},"65+":{"female":2663,"male":3061}},"top_age":"25-34"},"SAINT MAUR DES FOSSES":{"total":110056,"male":76198,"female":33858,"ages":{"18-24":{"female":8494,"male":15541},"25-34":{"female":7861,"male":21651},"35-44":{"female":4914,"male":15343},"45-54":{"female":4261,"male":11070},"55-64":{"female":4209,"male":7640},"65+":{"female":4119,"male":4953}},"top_age":"25-34"},"SAINT-CYR-L'ECOLE":{"total":102797,"male":69206,"female":33591,"ages":{"18-24":{"female":9550,"male":15217},"25-34":{"female":8028,"male":20422},"35-44":{"female":4991,"male":13904},"45-54":{"female":3961,"male":9551},"55-64":{"female":3761,"male":6298},"65+":{"female":3300,"male":3814}},"top_age":"25-34"},"SAINT-DONAT-SUR-L'HERBASSE":{"total":74337,"male":42821,"female":31516,"ages":{"18-24":{"female":6610,"male":8314},"25-34":{"female":8620,"male":13643},"35-44":{"female":5580,"male":8305},"45-54":{"female":4294,"male":6108},"55-64":{"female":3480,"male":3942},"65+":{"female":2932,"male":2509}},"top_age":"25-34"},"SAINTE MARIE DES CHAMPS":{"total":66924,"male":37424,"female":29500,"ages":{"18-24":{"female":5864,"male":6264},"25-34":{"female":7785,"male":11414},"35-44":{"female":5702,"male":8550},"45-54":{"female":4200,"male":5491},"55-64":{"female":3262,"male":3467},"65+":{"female":2687,"male":2238}},"top_age":"25-34"},"SALLANCHES":{"total":99444,"male":66775,"female":32669,"ages":{"18-24":{"female":7031,"male":13288},"25-34":{"female":7640,"male":19824},"35-44":{"female":5370,"male":13262},"45-54":{"female":4376,"male":9371},"55-64":{"female":4428,"male":6879},"65+":{"female":3824,"male":4151}},"top_age":"25-34"},"SALON DE PROVENCE":{"total":77705,"male":45669,"female":32036,"ages":{"18-24":{"female":6675,"male":7873},"25-34":{"female":8784,"male":14334},"35-44":{"female":5776,"male":9716},"45-54":{"female":4112,"male":6502},"55-64":{"female":3559,"male":4409},"65+":{"female":3130,"male":2835}},"top_age":"25-34"},"SARAN":{"total":71634,"male":43582,"female":28052,"ages":{"18-24":{"female":6775,"male":8760},"25-34":{"female":7407,"male":13802},"35-44":{"female":4656,"male":8614},"45-54":{"female":3580,"male":6058},"55-64":{"female":2879,"male":3782},"65+":{"female":2755,"male":2566}},"top_age":"25-34"},"SOLLIES PONT":{"total":67972,"male":38572,"female":29400,"ages":{"18-24":{"female":5802,"male":6406},"25-34":{"female":8030,"male":11514},"35-44":{"female":5527,"male":8693},"45-54":{"female":3771,"male":5542},"55-64":{"female":3294,"male":3832},"65+":{"female":2976,"male":2585}},"top_age":"25-34"},"SURESNES":{"total":40162,"male":21532,"female":18630,"ages":{"18-24":{"female":3692,"male":3614},"25-34":{"female":6558,"male":8005},"35-44":{"female":3467,"male":4527},"45-54":{"female":2263,"male":2725},"55-64":{"female":1535,"male":1698},"65+":{"female":1115,"male":963}},"top_age":"25-34"},"THIAIS":{"total":75818,"male":45416,"female":30402,"ages":{"18-24":{"female":7414,"male":8087},"25-34":{"female":9300,"male":16094},"35-44":{"female":5536,"male":9840},"45-54":{"female":3725,"male":6037},"55-64":{"female":2449,"male":3262},"65+":{"female":1978,"male":2096}},"top_age":"25-34"},"THONON LES BAINS":{"total":76513,"male":45521,"female":30992,"ages":{"18-24":{"female":6004,"male":8376},"25-34":{"female":8773,"male":14276},"35-44":{"female":5916,"male":10015},"45-54":{"female":4068,"male":6344},"55-64":{"female":3395,"male":3874},"65+":{"female":2836,"male":2636}},"top_age":"25-34"},"VIENNE":{"total":75721,"male":43903,"female":31818,"ages":{"18-24":{"female":7480,"male":8364},"25-34":{"female":9304,"male":14680},"35-44":{"female":5544,"male":9248},"45-54":{"female":3935,"male":5887},"55-64":{"female":3035,"male":3536},"65+":{"female":2520,"male":2188}},"top_age":"25-34"},"VIGNEUX SUR SEINE":{"total":93109,"male":58836,"female":34273,"ages":{"18-24":{"female":8209,"male":11142},"25-34":{"female":9545,"male":18399},"35-44":{"female":5934,"male":12898},"45-54":{"female":4328,"male":8229},"55-64":{"female":3409,"male":5018},"65+":{"female":2848,"male":3150}},"top_age":"25-34"},"VILLEREST":{"total":86220,"male":53940,"female":32280,"ages":{"18-24":{"female":6354,"male":9550},"25-34":{"female":7567,"male":16372},"35-44":{"female":5968,"male":11279},"45-54":{"female":4710,"male":8011},"55-64":{"female":4105,"male":5271},"65+":{"female":3576,"male":3457}},"top_age":"25-34"}};
-
 var impData = {"BESANÇON":"176011","AMBERIEUX D'AZERGUES":"124357","BERGERAC":"127371","BITSCHWILLER LES THANN":"115728","BOIS GUILLAUME":"189684","BOISSY SAINT LEGER":"135112","BOURG-ACHARD":"114455","BOURGOIN-JALLIEU":"146599","BRIGNOLES":"139926","CARNOUX":"160067","CARVIN":"170514","CASTRES":"150844","CHARMEIL":"149172","CLAIROIX":"161334","COMBS LA VILLE":"152282","CHARTRES":"150408","COSNES":"115200","COUILLY PONT AUX DAMES":"135231","COULAINES":"173685","COULOMMIERS":"128410","CRAPONNE":"166664","CROIX":"138458","DECHY":"171106","FONTAINEBLEAU":"128005","GARGENVILLE":"121337","GOURNAY SUR MARNE":"165604","ISSOIRE":"115791","ITTEVILLE":"130975","JOUÉ-LÉS-TOURS":"150109","LANGON":"134673","LE MANS":"173270","LE VERSOUD":"144302","LIMOGES":"172756","LIMOGES CENTRE":"170127","MARIGNANE":"153637","MARLY - (VALENCIENNES)":"171353","MEUNG-SUR-LOIRE":"147942","MILLAU":"113124","MIRIBEL LES ECHETS":"157587","MONTBELIARD":"171428","MONTLOUIS":"130696","NIORT":"158309","OLLIOULES":"175419","ORSAY":"116923","OZOIR LA FERRIERE":"144110","PORNIC":"126902","PRINGY":"156904","SAINT GERMAIN LES CORBEIL":"158135","SAINT MAUR DES FOSSES":"191088","SAINT-CYR-L'ECOLE":"176634","SAINT-DONAT-SUR-L'HERBASSE":"145515","SAINTE MARIE DES CHAMPS":"131964","SALLANCHES":"175753","SALON DE PROVENCE":"146782","SARAN":"160981","SOLLIES PONT":"133246","SURESNES":"109336","THIAIS":"127769","THONON LES BAINS":"147777","VIENNE":"133443","VIGNEUX SUR SEINE":"151931","VILLEREST":"164680"};
-
 function fmt(n) { return n.toLocaleString('fr-FR'); }
 function pct(a, b) { return Math.round(a / b * 100); }
-
 function buildCityList() {
   var container = document.getElementById('city-demo-list');
   var cityOrder = ["SAINT MAUR DES FOSSES","BOIS GUILLAUME","SAINT-CYR-L'ECOLE","BESANÇON","SALLANCHES","OLLIOULES","COULAINES","LE MANS","LIMOGES","MONTBELIARD","MARLY - (VALENCIENNES)","DECHY","CARVIN","LIMOGES CENTRE","CRAPONNE","GOURNAY SUR MARNE","VILLEREST","CLAIROIX","SARAN","CARNOUX","NIORT","SAINT GERMAIN LES CORBEIL","MIRIBEL LES ECHETS","PRINGY","MARIGNANE","COMBS LA VILLE","VIGNEUX SUR SEINE","CASTRES","CHARTRES","JOUÉ-LÉS-TOURS","CHARMEIL","MEUNG-SUR-LOIRE","THONON LES BAINS","SALON DE PROVENCE","BOURGOIN-JALLIEU","SAINT-DONAT-SUR-L'HERBASSE","LE VERSOUD","OZOIR LA FERRIERE","BRIGNOLES","CROIX","COUILLY PONT AUX DAMES","BOISSY SAINT LEGER","LANGON","VIENNE","SOLLIES PONT","SAINTE MARIE DES CHAMPS","ITTEVILLE","MONTLOUIS","COULOMMIERS","FONTAINEBLEAU","THIAIS","BERGERAC","PORNIC","AMBERIEUX D'AZERGUES","GARGENVILLE","ORSAY","ISSOIRE","BITSCHWILLER LES THANN","COSNES","BOURG-ACHARD","MILLAU","SURESNES"];
@@ -486,7 +456,6 @@ function buildCityList() {
   });
   container.innerHTML = html;
 }
-
 function toggleCity(city) {
   var cityOrder = ["SAINT MAUR DES FOSSES","BOIS GUILLAUME","SAINT-CYR-L'ECOLE","BESANÇON","SALLANCHES","OLLIOULES","COULAINES","LE MANS","LIMOGES","MONTBELIARD","MARLY - (VALENCIENNES)","DECHY","CARVIN","LIMOGES CENTRE","CRAPONNE","GOURNAY SUR MARNE","VILLEREST","CLAIROIX","SARAN","CARNOUX","NIORT","SAINT GERMAIN LES CORBEIL","MIRIBEL LES ECHETS","PRINGY","MARIGNANE","COMBS LA VILLE","VIGNEUX SUR SEINE","CASTRES","CHARTRES","JOUÉ-LÉS-TOURS","CHARMEIL","MEUNG-SUR-LOIRE","THONON LES BAINS","SALON DE PROVENCE","BOURGOIN-JALLIEU","SAINT-DONAT-SUR-L'HERBASSE","LE VERSOUD","OZOIR LA FERRIERE","BRIGNOLES","CROIX","COUILLY PONT AUX DAMES","BOISSY SAINT LEGER","LANGON","VIENNE","SOLLIES PONT","SAINTE MARIE DES CHAMPS","ITTEVILLE","MONTLOUIS","COULOMMIERS","FONTAINEBLEAU","THIAIS","BERGERAC","PORNIC","AMBERIEUX D'AZERGUES","GARGENVILLE","ORSAY","ISSOIRE","BITSCHWILLER LES THANN","COSNES","BOURG-ACHARD","MILLAU","SURESNES"];
   var cities = cityOrder.filter(function(c) { return cityData[c]; });
@@ -499,7 +468,6 @@ function toggleCity(city) {
   detail.style.display = isOpen ? 'none' : 'block';
   arrow.style.transform = isOpen ? '' : 'rotate(180deg)';
 }
-
 window.addEventListener('load', function() { buildCityList(); });
 </script>
 <!-- BILAN & RECOMMANDATIONS -->
@@ -514,7 +482,6 @@ window.addEventListener('load', function() { buildCityList(); });
   <div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;opacity:0.5;margin-bottom:10px;">Analyse · Recommandations</div>
   <div style="font-size:18px;font-weight:900;margin-bottom:4px;">Bilan &amp; Recommandations</div>
   <div style="font-size:12px;opacity:0.6;margin-bottom:24px;">Prochaine campagne à planifier</div>
-
   <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:18px 24px;margin-bottom:20px;">
     <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#a5b4fc;margin-bottom:14px;">📊 Ce que dit la campagne</div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
@@ -538,12 +505,9 @@ window.addEventListener('load', function() { buildCityList(); });
       La campagne a généré <strong style="color:white;">9 178 935 impressions</strong> sur 62 zones avec un CPM moyen de <strong style="color:white;">1,03 €</strong>. Les zones les plus performantes sont les agglomérations à fort ancrage résidentiel comme <strong style="color:white;">Saint-Maur-des-Fossés, Bois Guillaume et Saint-Cyr-l'École</strong>. La tranche <strong style="color:white;">25–34 ans</strong> concentre le plus d'impressions (27,3 %) avec une sur-représentation masculine notable (60,2 %).
     </div>
   </div>
-
   <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:18px 24px;">
     <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#86efac;margin-bottom:16px;">🚀 Recommandations</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-
-
       <div style="background:rgba(255,255,255,0.06);border-left:3px solid #f9a8d4;border-radius:8px;padding:12px 14px;">
         <div style="font-size:12px;font-weight:800;color:white;margin-bottom:4px;">👩 Renforcer le ciblage féminin</div>
         <div style="font-size:11px;opacity:0.75;line-height:1.6;">Les femmes représentent 39,8 % des impressions alors qu'elles sont souvent décisionnaires dans l'achat alimentaire. Ajuster le ciblage ou tester des visuels orientés audience féminine.</div>
@@ -555,10 +519,8 @@ window.addEventListener('load', function() { buildCityList(); });
     </div>
   </div>
 </div>
-
 <!-- CONTEXTE ARTICLE -->
 <div style="margin-bottom:24px;">
-
   <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
     <div style="background:#1a1a2e;border-radius:8px;padding:6px 16px;display:flex;align-items:center;gap:8px;">
       <span style="font-size:13px;">📰</span>
@@ -567,9 +529,7 @@ window.addEventListener('load', function() { buildCityList(); });
     <div style="font-size:12px;color:#9ca3af;font-weight:500;">Franceinfo · Février 2026</div>
     <div style="flex:1;height:1px;background:linear-gradient(to right,#e5e7eb,transparent);"></div>
   </div>
-
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-
     <!-- CE QUE DIT L'ARTICLE -->
     <div style="background:white;border-radius:14px;padding:24px 26px;box-shadow:0 2px 8px rgba(0,0,0,0.07);border-top:4px solid #1a5276;">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
@@ -583,7 +543,6 @@ window.addEventListener('load', function() { buildCityList(); });
         <a href="https://www.franceinfo.fr/sante/alimentation/vin-spiritueux-le-secteur-du-vin-est-tres-sensible-a-la-conjoncture-economique-car-ce-n-est-pas-un-bien-essentiel-analyse-jean-marie-cordebat-professeur-d-economie-et-professeur-affilie-a-l-inseec-grande-ecole_7798448.html" target="_blank" style="display:inline-flex;align-items:center;gap:5px;background:#f0f4ff;border:1px solid #c7d7f7;border-radius:20px;padding:5px 14px;font-size:11px;font-weight:600;color:#1a5276;text-decoration:none;">Lire l'article ↗</a>
       </div>
     </div>
-
     <!-- CE QUE DIT NOTRE CAMPAGNE -->
     <div style="background:white;border-radius:14px;padding:24px 26px;box-shadow:0 2px 8px rgba(0,0,0,0.07);border-top:4px solid #15803d;">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
@@ -591,27 +550,23 @@ window.addEventListener('load', function() { buildCityList(); });
         <span style="font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#15803d;">Ce que dit notre campagne</span>
       </div>
       <p style="font-size:13px;line-height:1.9;color:#374151;">
-        Dans ce contexte difficile pour la filière, les résultats de la campagne Intercave sont un signal positif et encourageant. Là où l'article souligne que le secteur peine à atteindre les jeunes adultes, <strong style="color:#1a1a2e;">notre campagne a précisément touché les 25–34 ans en premier</strong>, représentant 28,7 % de la couverture totale, devant toutes les autres tranches d'âge. Ce n'est pas anodin : c'est exactement la cible que le secteur dit avoir perdue.
+        Dans ce contexte difficile pour la filière, les résultats de la campagne Intercaves sont un signal positif et encourageant. Là où l'article souligne que le secteur peine à atteindre les jeunes adultes, <strong style="color:#1a1a2e;">notre campagne a précisément touché les 25–34 ans en premier</strong>, représentant 28,7 % de la couverture totale, devant toutes les autres tranches d'âge. Ce n'est pas anodin : c'est exactement la cible que le secteur dit avoir perdue.
       </p>
       <p style="font-size:13px;line-height:1.9;color:#374151;margin-top:12px;">
-        Sur la question des nouveaux modes de communication, la campagne Meta répond elle aussi à cette injonction de modernité. Avec <strong style="color:#1a1a2e;">plus de 4,9 millions de personnes atteintes</strong> sur 62 zones pour 9 299 €, elle démontre qu'il est possible de travailler la notoriété d'une marque de la filière à des CPM compétitifs (1,03 €), sans dépenser des budgets hors de portée. Dans un secteur qui doit "faire les choses différemment" pour toucher des consommateurs peu avertis, la présence digitale ciblée d'Intercave va exactement dans ce sens.
+        Sur la question des nouveaux modes de communication, la campagne Meta répond elle aussi à cette injonction de modernité. Avec <strong style="color:#1a1a2e;">plus de 4,9 millions de personnes atteintes</strong> sur 62 zones pour 9 299 €, elle démontre qu'il est possible de travailler la notoriété d'une marque de la filière à des CPM compétitifs (1,03 €), sans dépenser des budgets hors de portée. Dans un secteur qui doit "faire les choses différemment" pour toucher des consommateurs peu avertis, la présence digitale ciblée d'Intercaves va exactement dans ce sens.
       </p>
       <p style="font-size:13px;line-height:1.9;color:#374151;margin-top:12px;">
-        Le défi identifié par l'article reste entier pour la suite : la sur-représentation masculine (60,8 %) rappelle qu'il faudra élargir la fenêtre d'adresse, notamment vers les femmes, souvent décisionnaires dans l'achat alimentaire. Mais la base est là. <strong style="color:#1a1a2e;">Intercave a commencé à occuper le terrain digital au bon moment.</strong>
+        Le défi identifié par l'article reste entier pour la suite : la sur-représentation masculine (60,8 %) rappelle qu'il faudra élargir la fenêtre d'adresse, notamment vers les femmes, souvent décisionnaires dans l'achat alimentaire. Mais la base est là. <strong style="color:#1a1a2e;">Intercaves a commencé à occuper le terrain digital au bon moment.</strong>
       </p>
     </div>
-
   </div>
 </div>
-
 <!-- CLOSING -->
 <div style="text-align:center;padding:40px 32px 32px;">
   <div style="font-size:22px;font-weight:900;color:#1a1a2e;letter-spacing:-0.5px;">
     MERCI POUR VOTRE CONFIANCE.
   </div>
 </div>
-
-<div class="footer">Document réalisé par Novembre communication · Intercave x Novembre · Bilan campagne FAV Printemps 2026</div>
-
+<div class="footer">Document réalisé par Novembre communication · Intercaves x Novembre · Bilan campagne FAV Printemps 2026</div>
 </body>
 </html>
